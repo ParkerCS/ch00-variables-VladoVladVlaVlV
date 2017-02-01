@@ -9,6 +9,8 @@ x = 12.83
 your_answer = 3*(60*x*x+(3*x/9))+2*x-((4/3)*x)-math.sqrt(x)
 print(your_answer, "")
 
+#LEE - use proper spacing in your code.  Don't crunch everything together like this. (-1)
+
 #PROBLEM 2 (Set your alarm - 3pts)
 
 #You look at the clock and see that it is currently 1:00PM.
@@ -25,6 +27,12 @@ if (dzvoni+sat)>0 and (dzvoni+sat)<=12:
     print(dzvoni+sat,"PM")
 elif (dzvoni+sat)>12:
     print((dzvoni+sat)-12,"AM")
+
+#Lee - use English variables to help me out in grading for future projects.
+# You are off by one hour.  I believe the floor got you on this one.  Try a modulo as suggested in the problem (-1)
+
+
+
 #PROBLEM 3 (Wholesale Books - 3pts)
 #The cover price of a book is $27.95, but bookstores get a 50 percent discount.
 #Shipping costs $4 for the first copy and 75 cents for each additional copy.
@@ -34,6 +42,8 @@ elif (dzvoni+sat)>12:
 #im also not not sure of the numerical representation of a penny (0.1) (0.01) ?
 answer=((27.95*0.5)-4+67*((27.95*0.5)-0.75))
 print(answer)
+
+# penny is 0.01, and you really should have variables.  When I look at this, I don't know that we are discussing book sales at all. (-1)
 
 #PROBLEM 4 (Dining Room Chairs - 3pts)
 # You purchase eight chairs for your dining room.
@@ -45,6 +55,8 @@ tax_percent = 0.095
 units = 8
 amount=chair_price*tax_percent*units
 print(round(amount,2))
+
+# LEE - You calculated tax only and left out the chairs (-1)
 
 #PROBLEM 5 (Area of Circle - 3pts)
 # Write code that can compute the area of circle.
@@ -75,7 +87,9 @@ current_count=(count-dolari-(quarters*0.25)-(dimes*0.1))
 nickels=(current_count//0.05)
 pennies=(current_count%0.05)//0.01
 
-print(pennies+dimes+nickels+quarters)
+print(pennies,dimes,nickels,quarters)
+
+# Lee - This one did not work out properly.  You are not tracking the current_amount properly.  Calculate the number of dollars, then take them out of the running total, then calculate the quarters, then take them out of the running total, etc.. (-1)
 
 #PROBLEM 7 (Variable Swap - 2pts)
 # Can you think of a way to swap the values of two variables that does not
